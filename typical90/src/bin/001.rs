@@ -4,30 +4,33 @@ use proconio::input;
 fn main() {
     input!{
         n: usize,
-        k: usize,
         l: usize,
-        a: [usize; n],
+        k: usize,
+        mut a: [usize; n],
     }
+    //b search
     let mut lo = 0;
-    let mut hi = n;
-    let ans = while lo < hi{
+    let mut hi = l;
+    let mut ans = l;
+    while lo < hi{
         let mid = (lo+hi)/2;
-        let mut len = 0;
+        let mut len_c = 0;
         let mut cnt = 0;
-        for i in &a{
-            if len>mid{
-                len = 0;
+        ans = l;
+        for i in 0..n-1{
+            if a[i]-len_c>=mid{
                 cnt += 1;
-            }else{
-                len += i;
+                ans = ans.min(a[i]-len_c);
+                len_c = a[i];
             }
         }
-        if k < cnt{lo = mid+1;}
-        else{hi = mid;}
-        
-        if lo>=hi{
-            mid;
-        }
-    };
+        ans = ans.min(l-len_c);
+        println!("{} {} {} {}", lo, hi, cnt, ans);
+        if cnt<=k{hi=mid;}
+        else{lo=mid+1;}
+    }
     println!("{}", ans);
+
+    
+
 }
