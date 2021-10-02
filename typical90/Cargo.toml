@@ -1,0 +1,143 @@
+[package]
+name = "typical90"
+version = "0.1.0"
+authors = ["neko0774 <neko0774@gmail.com>"]
+edition = "2018"
+
+[package.metadata.cargo-compete.bin]
+typical90-001 = { alias = "001", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_a" }
+typical90-002 = { alias = "002", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_b" }
+typical90-003 = { alias = "003", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_c" }
+typical90-004 = { alias = "004", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_d" }
+typical90-005 = { alias = "005", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_e" }
+typical90-006 = { alias = "006", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_f" }
+typical90-007 = { alias = "007", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_g" }
+typical90-008 = { alias = "008", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_h" }
+typical90-009 = { alias = "009", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_i" }
+typical90-010 = { alias = "010", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_j" }
+typical90-011 = { alias = "011", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_k" }
+typical90-012 = { alias = "012", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_l" }
+typical90-013 = { alias = "013", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_m" }
+typical90-014 = { alias = "014", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_n" }
+typical90-015 = { alias = "015", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_o" }
+typical90-016 = { alias = "016", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_p" }
+typical90-017 = { alias = "017", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_q" }
+typical90-018 = { alias = "018", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_r" }
+typical90-019 = { alias = "019", problem = "https://atcoder.jp/contests/typical90/tasks/typical90_s" }
+
+[[bin]]
+name = "typical90-001"
+path = "src/bin/001.rs"
+
+[[bin]]
+name = "typical90-002"
+path = "src/bin/002.rs"
+
+[[bin]]
+name = "typical90-003"
+path = "src/bin/003.rs"
+
+[[bin]]
+name = "typical90-004"
+path = "src/bin/004.rs"
+
+[[bin]]
+name = "typical90-005"
+path = "src/bin/005.rs"
+
+[[bin]]
+name = "typical90-006"
+path = "src/bin/006.rs"
+
+[[bin]]
+name = "typical90-007"
+path = "src/bin/007.rs"
+
+[[bin]]
+name = "typical90-008"
+path = "src/bin/008.rs"
+
+[[bin]]
+name = "typical90-009"
+path = "src/bin/009.rs"
+
+[[bin]]
+name = "typical90-010"
+path = "src/bin/010.rs"
+
+[[bin]]
+name = "typical90-011"
+path = "src/bin/011.rs"
+
+[[bin]]
+name = "typical90-012"
+path = "src/bin/012.rs"
+
+[[bin]]
+name = "typical90-013"
+path = "src/bin/013.rs"
+
+[[bin]]
+name = "typical90-014"
+path = "src/bin/014.rs"
+
+[[bin]]
+name = "typical90-015"
+path = "src/bin/015.rs"
+
+[[bin]]
+name = "typical90-016"
+path = "src/bin/016.rs"
+
+[[bin]]
+name = "typical90-017"
+path = "src/bin/017.rs"
+
+[[bin]]
+name = "typical90-018"
+path = "src/bin/018.rs"
+
+[[bin]]
+name = "typical90-019"
+path = "src/bin/019.rs"
+[dependencies]
+num = "=0.2.1"
+num-bigint = "=0.2.6"
+num-complex = "=0.2.4"
+num-integer = "=0.1.42"
+num-iter = "=0.1.40"
+num-rational = "=0.2.4"
+num-traits = "=0.2.11"
+num-derive = "=0.3.0"
+ndarray = "=0.13.0"
+nalgebra = "=0.20.0"
+alga = "=0.9.3"
+libm = "=0.2.1"
+rand = { version = "=0.7.3", features = ["small_rng"] }
+getrandom = "=0.1.14"
+rand_chacha = "=0.2.2"
+rand_core = "=0.5.1"
+rand_hc = "=0.2.0"
+rand_pcg = "=0.2.1"
+rand_distr = "=0.2.2"
+petgraph = "=0.5.0"
+indexmap = "=1.3.2"
+regex = "=1.3.6"
+lazy_static = "=1.4.0"
+ordered-float = "=1.0.2"
+ascii = "=1.0.0"
+permutohedron = "=0.2.4"
+superslice = "=1.0.0"
+itertools = "=0.9.0"
+itertools-num = "=0.1.3"
+maplit = "=1.0.2"
+either = "=1.5.3"
+im-rc = "=14.3.0"
+fixedbitset = "=0.2.0"
+bitset-fixed = "=0.1.0"
+proconio = { version = "=0.3.6", features = ["derive"] }
+text_io = "=0.1.8"
+whiteread = "=0.5.0"
+rustc-hash = "=1.1.0"
+smallvec = "=1.2.0"
+[dev-dependencies]

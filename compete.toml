@@ -23,6 +23,7 @@ open = '[["code", "-a", .manifest_dir], ["code"] + (.paths | map([.src, .test_su
 [template]
 src = '''
 use proconio::input;
+//const MOD = 1_000_000_007;
 
 fn main() {
     input!{
@@ -38,7 +39,7 @@ fn main() {
 #profile = '''
 #[dev]
 #opt-level = 3
-RUST_BACKTRACE=1
+#RUST_BACKTRACE = 1
 #'''
 dependencies = '''
 num = "=0.2.1"
